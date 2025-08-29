@@ -1,0 +1,30 @@
+.section {
+    padding: 64px 0;
+}
+
+.second-title {
+    margin-bottom: 24px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+}
+
+.second-title-part {
+    display: block;
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.section-description {
+    font-weight: 400;
+    font-size: 18px;    
+}
+
+@media screen and (min-width: 1440px) {
+    .second-title {
+        font-size: 48px;
+    }
+}
