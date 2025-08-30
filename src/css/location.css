@@ -1,0 +1,28 @@
+.text-location{font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #0b0803;
+    margin-bottom: 16px;
+}
+
+.location-tittle{
+    font-family: "Aboreto", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: #0b0803;
+    margin-bottom: 24px;
+}
+
+.loc-description{
+    margin-bottom: 40px;
+}
+
+.contacts-location li:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.contacts-location li:last-child {
+    margin-top: 32px;
+}
