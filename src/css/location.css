@@ -26,3 +26,8 @@
 .contacts-location li:last-child {
     margin-top: 32px;
 }
+
+.map-container iframe {
+    border-radius: 40px;
+    display: block;
+}
