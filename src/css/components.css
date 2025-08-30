@@ -23,6 +23,17 @@
     font-size: 18px;    
 }
 
+/* .nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.nav-list-link {
+    font-weight: 400;
+    font-size: 16px;
+} */
+
 @media screen and (min-width: 1440px) {
     .second-title {
         font-size: 48px;
