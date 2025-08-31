@@ -1,0 +1,35 @@
+/* Experience */
+
+/* Styles for Mobile devices */
+.second-title.experience-ttl {
+  text-align: center;
+}
+.section-description.experience-txt {
+  text-align: center;
+}
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.experience-image img {
+  border-radius: 32px;
+  width: 100%;
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .experience-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 32px;
+  }
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1440px) {
+  .experience-list {
+    flex-direction: column;
+    max-height: 948px;
+  }
+}
