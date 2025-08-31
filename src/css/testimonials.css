@@ -1,9 +1,4 @@
 
-/*заголовок*/
-.testimonials-title {
-    max-width: 288px;
-}
-
 /*список*/
 .testimonials-list {
     display: flex;
@@ -52,26 +47,19 @@
     font-weight: 400;
     font-size: 18px;
     margin-bottom: 24px;
-    line-height: 1.5;
 }
 
 .desk-name {
     font-weight: 600;
     font-size: 16px;
-    line-height: 1.5;
 }
 
 /*адаптація*/
 
 @media only screen and (min-width: 768px) {
-    .testimonials-title {
-        max-width: 498px;
-    }
-
     .testimonials-item {
         width: calc((100% - 24px) / 2);
         min-height: 253.5px;
-
     }
 
     .desk-list {
@@ -80,13 +68,11 @@
 
     .desk-name {
         margin-top: auto;
-        margin-bottom: 0;
     }
 }
 
 @media only screen and (min-width: 1440px) {
     .testimonials-title {
-        font-size: 48px;
         max-width: 416px;
     }
 
