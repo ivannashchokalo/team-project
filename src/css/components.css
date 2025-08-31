@@ -12,6 +12,7 @@
 }
 
 .second-title-part {
+    font-family: var(--font-family);
     display: block;
     margin-bottom: 16px;
     font-weight: 600;
