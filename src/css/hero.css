@@ -13,6 +13,10 @@
   margin: 0 auto;
 }
 
+.hero-container {
+  margin: 0;
+}
+
 .hero-title {
   font-family: var(--second-family);
   font-weight: 400;
