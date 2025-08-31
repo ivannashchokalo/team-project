@@ -9,8 +9,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   margin: 0 auto;
+}
+
+.hero-container {
+  margin: 0;
 }
 
 .hero-title {
@@ -87,9 +90,7 @@
     max-width: 1440px;
     height: 900px;
   }
-  .hero-container {
-    margin-left: 64px;
-  }
+  
   .hero-title {
     font-size: 56px;
     max-width: 560px;
