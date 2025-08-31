@@ -22,14 +22,12 @@
   .experience-list {
     flex-wrap: wrap;
     flex-direction: row;
+    gap: 32px;
   }
 }
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
-  .second-title.experience-ttl {
-    font-size: 48px;
-  }
   .experience-list {
     flex-direction: column;
     max-height: 948px;
