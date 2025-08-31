@@ -45,8 +45,7 @@
 }
 
 .hero-btn:active {
-  opacity: 0.5;
-  color: #0b0803;
+  box-shadow: none;
 }
 
 /* Retina для мобільних */
@@ -64,15 +63,14 @@
     height: 900px;
   }
   .hero-title {
-    min-width: 560px;
+    max-width: 560px;
   }
   .hero-text {
-    min-width: 560px;
+    max-width: 560px;
   }
   .hero-btn:hover,
   .hero-btn:focus {
     opacity: 0.5;
-    color: #0b0803;
   }
 }
 
