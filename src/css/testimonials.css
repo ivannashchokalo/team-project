@@ -1,0 +1,84 @@
+
+/*список*/
+.testimonials-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.testimonials-item {
+    border: 1px solid rgba(11, 8, 3, 0.15);
+    border-radius: 32px;
+    padding: 32px;
+    box-sizing: border-box;
+    background-color: #c29d84;
+    display: flex;
+    flex-direction: column;
+}
+
+/*зірки*/
+
+.testimonials-list-star {
+    display: flex;
+    gap: 4px;
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+.testimonials-item-star {
+    display: flex;
+    align-items: center;
+}
+
+.star-none {
+    fill: transparent;
+    stroke: #0b0803;
+    stroke-width: 1px;
+}
+
+.star-svg {
+    fill: #0b0803;
+    stroke: none;
+}
+
+/*текст*/
+
+.desk-list {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+
+.desk-name {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/*адаптація*/
+
+@media only screen and (min-width: 768px) {
+    .testimonials-item {
+        width: calc((100% - 24px) / 2);
+        min-height: 253.5px;
+    }
+
+    .desk-list {
+        margin: 0;
+    }
+
+    .desk-name {
+        margin-top: auto;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .testimonials-title {
+        max-width: 416px;
+    }
+
+    .testimonials-item {
+        width: calc((100% - 72px) / 4);
+        min-height: 303px;
+    }
+
+}
