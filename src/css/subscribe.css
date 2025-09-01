@@ -77,9 +77,6 @@
         width: 158px;
     }
 
-    .subscribe-form-label{
-    }
-
     .subscribe-form-button {
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -91,7 +88,7 @@
 
     .subscribe-form-button:hover,
     .subscribe-form-button:focus {
-        background-color: rgba(111, 78, 55, 0.5);
+        opacity: 0.5;
     }
 
     .subscribe-form-button:hover svg,
@@ -113,5 +110,9 @@
 
     .subscribe-title{
         max-width: 640px;
+    }
+
+    .subscribe-form-group{
+        gap: 16px;
     }
 }
