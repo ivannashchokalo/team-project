@@ -37,7 +37,7 @@ footer svg{
     
 }
 
-.nav-list-link:active,.social-list-item:active, .logo-link:active{
+.nav-list-link:active,.social-list-item:active{
     opacity: 0.7;
 }
 
@@ -51,6 +51,14 @@ footer svg{
     .nav-list-link:hover,.social-list-item:hover, .nav-list-link:focus,.social-list-item:focus{
     opacity: 0.5;
     }
+    .logo-link{
+        width: 84px;
+        height: 36px;
+    }
+    .social-list-item svg{
+    width:24px ;
+    height: 24px;
+}
 }
 
 @media (min-width: 1440px) {
@@ -65,6 +73,7 @@ footer svg{
         .nav-list-link:hover,.social-list-item:hover, .nav-list-link:focus,.social-list-item:focus{
     opacity: 0.5;
 }
+
 
     
 }
