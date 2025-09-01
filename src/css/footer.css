@@ -1,6 +1,6 @@
 footer{
     background-color: #B58869;
-    padding: 24px;
+    padding: 24px 0;
 }
 .footer-start{
     display: flex;
@@ -9,8 +9,8 @@ footer{
     gap:40px; 
 }
 
-footer .container{
-    background-color: #C29D84;
+.content{
+     background-color: #C29D84;
     border-radius: 32px;
     display: flex;
     justify-content: center;
@@ -19,9 +19,7 @@ footer .container{
     min-width: initial;
     text-align: center;
     gap:32px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
+    padding: 32px 48px;
 }
 
 .footer-social-list{
@@ -38,20 +36,36 @@ footer svg{
     fill:black;
     
 }
-.nav-list-link:hover,.social-list-item:hover, .nav-list-link:focus,.social-list-item:focus{
-    opacity: 0.5;
-}
-.nav-list-link:active,.social-list-item:active{
+
+.nav-list-link:active,.social-list-item:active, .logo-link:active{
     opacity: 0.7;
 }
+
 @media (min-width: 769px) {
-    footer .container{
+    .content{
         flex-direction: column;
     }
     .nav-list, .footer-start{
         flex-direction: row;
     }
-    
+    .nav-list-link:hover,.social-list-item:hover, .nav-list-link:focus,.social-list-item:focus{
+    opacity: 0.5;
+    }
+}
+
+@media (min-width: 1440px) {
+    .content{
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    .nav-list, .footer-start{
+        flex-direction: row;
+    }
+        .nav-list-link:hover,.social-list-item:hover, .nav-list-link:focus,.social-list-item:focus{
+    opacity: 0.5;
+}
+
     
 }
     
