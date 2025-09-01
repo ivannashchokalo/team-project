@@ -25,7 +25,10 @@ footer{
 .footer-social-list{
     display: flex;
     flex-direction: row;
-    gap:16px;
+    gap:12px;
+}
+.footer-social-list svg{
+    display: block;
 }
 .footer-ending{
     text-align: center;
