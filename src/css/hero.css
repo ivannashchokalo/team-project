@@ -91,7 +91,9 @@
     max-width: 1440px;
     height: 900px;
   }
-
+  .hero-container {
+    padding: 0 64px;
+  }
   .hero-title {
     font-size: 56px;
     max-width: 560px;
