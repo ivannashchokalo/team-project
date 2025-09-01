@@ -50,10 +50,16 @@
 }
 
 .quality-item-descr {
+  margin: 0 auto;
+  max-width: 288px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
+}
+
+.quality-item-descriptions {
+  
 }
 
 /* Tablet Styles */
@@ -90,8 +96,9 @@
     margin: 0 23px;
   }
 
-  .quality-item-descriptios {
+  .quality-item-descriptions {
     margin: 0 136px;
+    text-align: center;
   }
 
   .quality-item-title,
@@ -113,7 +120,8 @@
   }
 
   .quality-descr {
-    margin: 0 336px 32px;
+    max-width: 768px;
+    margin: 0 auto 32px;
   }
 
   .quality-item {
@@ -137,7 +145,8 @@
     width: calc(33.333% - 16px);
   }
 
-  .quality-item-descriptios {
-    margin: 0;
+  .quality-item-descriptions {
+    margin: 0 auto;
+    max-width: 440px;
   }
 }
