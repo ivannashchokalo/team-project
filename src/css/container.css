@@ -6,104 +6,11 @@
   padding: 0 16px;
 }
 
-.quality-title {
-  font-family: var(--second-family);
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
-  text-align: center;
-  margin-bottom: 24px;
-}
-
-.quality-descr {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: center;
-  margin-bottom: 32px;
-}
-
-.quality-list {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.quality-item {
-  text-align: center;
-}
-
-.quality-item-img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 32px;
-  border-radius: 32px;
-}
-
-.quality-item-title {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.5;
-  text-align: center;
-  margin-bottom: 8px;
-}
-
-.quality-item-descr {
-  margin: 0 auto;
-  max-width: 288px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-}
-
-.quality-item-descriptions {
-  
-}
-
-/* Tablet Styles */
+/* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
     padding: 0 32px;
-  }
-
-  .quality-title {
-    margin: 0 126px 24px;
-  }
-
-  .quality-item-title {
-    margin: 0 28px 8px;
-  }
-
-  .quality-list {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .quality-item {
-    width: calc(50% - 12px);
-    text-align: left;
-  }
-
-  .quality-item:last-child {
-    width: 100%;
-  }
-
-  .unusual {
-    margin: 0 23px;
-  }
-
-  .quality-item-descriptions {
-    margin: 0 136px;
-    text-align: center;
-  }
-
-  .quality-item-title,
-  .quality-item-descr {
-    text-align: center;
   }
 }
 
@@ -112,41 +19,5 @@
   .container {
     max-width: 1440px;
     padding: 0 64px;
-  }
-
-  .quality-title {
-    font-size: 48px;
-    margin: 0 336px 24px;
-  }
-
-  .quality-descr {
-    max-width: 768px;
-    margin: 0 auto 32px;
-  }
-
-  .quality-item {
-    width: calc(33.333% - 16px);
-    text-align: center;
-  }
-
-  .quality-item-title {
-    margin: 0 0 8px;
-  }
-
-  .unusual {
-    margin: 0;
-  }
-
-  .quality-list {
-    flex-wrap: nowrap;
-  }
-
-  .quality-item:last-child {
-    width: calc(33.333% - 16px);
-  }
-
-  .quality-item-descriptions {
-    margin: 0 auto;
-    max-width: 440px;
   }
 }
