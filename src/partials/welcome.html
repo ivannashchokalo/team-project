@@ -1,3 +1,61 @@
 <section class="welcome section">
-  <div class="container">Welcome</div>
+  <div class="container">
+    <div>
+      <ul class="">
+        <li>
+          <title class="second-title-part">Welcome</title>
+          <h2 class="welcome second-title">
+            Our Journey: Passion for Quality Coffee
+          </h2>
+        </li>
+        <li>
+          <p class="welcome section-description">
+            At CoffeeJoy, we believe that every cup tells a story. Our mission
+            is to bring you the finest coffee experiences, crafted with care and
+            dedication. We are committed to sourcing high-quality beans and
+            roasting them to perfection, ensuring each sip is a delight.
+          </p>
+        </li>
+        <li>
+          <button class="welcome-button" type="button">
+            <p>Find location</p>
+            <svg class="welcome-icon" width="24" heigth="24">
+              <use href="../img//icons.svg#map-pin"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="welcome-image">
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="
+            ../img/welcome/welcome-desk-min.jpg    1x,
+            ../img/welcome/welcome-desk@2x-min.jpg 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ../img/welcome/welcome-tab-min.jpg    1x,
+            ../img/welcome/welcome-tab@2x-min.jpg 2x
+          "
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ../img/welcome/welcome-mob-min.jpg    1x,
+            ../img/welcome/welcome-mob@2x-min.jpg 2x
+          "
+        />
+        <img
+          src="../img/welcome/welcome-desk-min.jpg"
+          alt="Passion for quality coffee"
+          width="1312"
+          height="738"
+        />
+      </picture>
+    </div>
+  </div>
 </section>
