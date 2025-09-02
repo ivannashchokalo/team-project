@@ -1,8 +1,11 @@
-<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;"
+    version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
         <symbol id="chevron-right" viewBox="0 0 31 32">
-            <path d="M12.425 22.691l7.305-7.305-7.305-7.305-1.81 1.81 5.495 5.495-5.495 5.495 1.81 1.81z"></path>
+            <path
+                d="M12.425 22.691l7.305-7.305-7.305-7.305-1.81 1.81 5.495 5.495-5.495 5.495 1.81 1.81z"></path>
         </symbol>
+
         <symbol id="chevrons-right" viewBox="0 0 35 32">
             <path d="M14.123 4.965l11.533 11.44-11.533 11.44 3.755 3.787 15.352-15.227-15.352-15.227-3.755 3.787z"></path>
             <path d="M4.544 1.178l-3.755 3.787 11.533 11.44-11.533 11.44 3.755 3.787 15.352-15.227-15.352-15.227z"></path>
@@ -41,5 +44,6 @@
         <symbol id="icon-custom" viewBox="0 0 31 32">
             <path d="M22.207 5.741h3.569l-7.796 8.763 9.172 11.924h-7.181l-5.625-7.232-6.436 7.232h-3.571l8.339-9.373-8.799-11.314h7.364l5.084 6.61 5.881-6.61zM20.955 24.328h1.978l-12.764-16.596h-2.122l12.909 16.596z"></path>
         </symbol>
+
     </defs>
 </svg>
