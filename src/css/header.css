@@ -34,14 +34,9 @@
 }
 
 .nav-link:active {
-    opacity: 70%;
+    opacity: 0.7;
 }
 
-.burger-btn-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
 
 .burger-btn {
     display: flex;
@@ -50,7 +45,6 @@
     border: none;
     padding: 0;
     background: transparent;
-    cursor: pointer;
     line-height: 0;
 }
 
@@ -60,12 +54,8 @@
 }
 
 .burger-icon:active {
-    opacity: 70%;
-}
-
-.burger-icon:hover,
-.burger-icon:focus {
-        opacity: 50%
+    background-color: rgba(11, 8, 3, 0.1);
+    border-radius: 50%;
 }
 
 @media screen and (min-width: 768px) {
@@ -89,6 +79,6 @@
 
     .nav-link:hover,
     .nav-link:focus {
-        opacity: 50%
+        opacity: 0.5;
     }
 }
