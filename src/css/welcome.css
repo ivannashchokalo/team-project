@@ -9,9 +9,9 @@
 }
 
 .welcome-button {
-    display: flex;
-    align-items: center;
+    display: inline-flex;
     justify-content: center;
+    align-items: center;
     gap: 12px;
     border-radius: 100px;
     padding: 10px 24px;
@@ -34,12 +34,11 @@
 
 .welcome-icon {
     fill: #fff;
+    flex-shrink: 0;
 }
 
 .welcome-img {
     border-radius: 40px;
-    width: 100%;
-    overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
