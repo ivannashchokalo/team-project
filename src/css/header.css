@@ -76,9 +76,4 @@
     .burger-btn {
         display: none;
     }
-
-    .nav-link:hover,
-    .nav-link:focus {
-        opacity: 0.5;
-    }
 }
