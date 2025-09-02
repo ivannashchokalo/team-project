@@ -39,7 +39,7 @@
 
 /* Tablet Styles */
 @media only screen and (min-width: 768px) {
-    .second-title {
+    .quality-title {
         max-width: 452px;
     }
 
@@ -65,7 +65,7 @@
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
-    .second-title {
+    .quality-title {
         max-width: 768px;
     }
 
