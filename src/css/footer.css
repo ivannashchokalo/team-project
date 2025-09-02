@@ -44,7 +44,7 @@ footer svg{
 .nav-list-link,.social-list-item{
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1)
     }
-.nav-list-link:active,.social-list-item:active{
+.social-list-item:active{
     opacity: 0.7;
 }
 
@@ -55,8 +55,9 @@ footer svg{
     .nav-list, .footer-start{
         flex-direction: row;
     }
-    .nav-list-link:hover,.social-list-item:hover, .nav-list-link:focus,.social-list-item:focus{
-    opacity: 0.5;
+    .social-list-item:hover,
+    .social-list-item:focus {
+        opacity: 0.5;
     }
     
     .logo-link{
@@ -78,11 +79,9 @@ footer svg{
     .nav-list, .footer-start{
         flex-direction: row;
     }
-        .nav-list-link:hover,.social-list-item:hover, .nav-list-link:focus,.social-list-item:focus{
-    opacity: 0.5;
-}
-
-
-    
+    .social-list-item:hover,
+    .social-list-item:focus{
+        opacity: 0.5;
+    }  
 }
     
