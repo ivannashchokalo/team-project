@@ -25,7 +25,7 @@ font-family: "Quicksand", sans-serif;
     display: block;
 }
 
-address {
+.add-loc {
 font-style: normal;
 margin-bottom: 32px; 
 }
@@ -124,14 +124,10 @@ font-size: 16px;
 }
 
 
-@media screen and (min-width:1158px) {
-.location .container {
-    max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
+@media screen and (min-width:1440px) {
+.location .container { 
     display: flex;
     gap: 24px;
-    align-items: flex-start;
     }
 
    
