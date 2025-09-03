@@ -1,0 +1,43 @@
+<div class="backdrop" data-modal>
+  <div class="modal">
+    <button id="" class="modal-close-button-x" type="button" data-modal-close>
+      <svg class="modal-close-icon" width="14" height="14">
+        <use href="../img/icons.svg#close"></use>
+      </svg>
+    </button>
+    <div class="modal-text-wrapper">
+      <h2 class="modal-title">Welcome to the world of CoffeeJoy!</h2>
+      <p class="modal-desctiption">
+        Fresh brews, special offers, and cozy updates are coming your way.
+      </p>
+    </div>
+    <picture class="modal-img">
+      <source
+        srcset="
+          ../img/modal/modal-img-des.webp    1x,
+          ../img/modal/modal-img-des@2x.webp 2x
+        "
+        media="(min-width: 1440px)"
+      />
+      <source
+        srcset="
+          ../img/modal/modal-img-tab.webp    1x,
+          ../img/modal/modal-img-tab@2x.webp 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ../img/modal/modal-img-mob.webp    1x,
+          ../img/modal/modal-img-mob@2x.webp 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <img
+        src="/img//modal//modal-img-des.webp"
+        alt="Coffee, croissant and envelope on a table"
+      />
+    </picture>
+    <button class="modal-close-button" type="button">Close</button>
+  </div>
+</div>
