@@ -1,13 +1,13 @@
 :root {
-  --font-family: "Quicksand", sans-serif;
-  --second-family: "Aboreto", system-ui;
+  --font-family: 'Quicksand', sans-serif;
+  --second-family: 'Aboreto', system-ui;
 }
 
 body {
   font-family: var(--font-family);
   line-height: 1.5;
   color: #0b0803;
-  background-color: #e0cbb4;
+  background-color: #E0CBB4;
 }
 
 .visually-hidden {
