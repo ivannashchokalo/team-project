@@ -1,0 +1,74 @@
+.second-title.welcome {
+    margin-bottom: 32px;
+}
+
+.welcome-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.welcome-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 100px;
+    padding: 10px 24px;
+    width: 100%;
+    height: 44px;
+    box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05), inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15), inset 0 2px 1px 0 rgba(255, 255, 255, 0.25), inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+    background: #6f4e37;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 0;
+}
+
+.welcome-button:active {
+    box-shadow: none;
+}
+
+.welcome-icon {
+    fill: #fff;
+    flex-shrink: 0;
+}
+
+.welcome-img {
+    border-radius: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .welcome-content {
+        flex-direction: row;
+        gap: 32px
+    }
+    
+    .welcome-title {
+        width: calc((100% - 32px) / 2);
+    }
+
+    .second-title.welcome {
+        margin-bottom: 0px;
+    }
+
+    .welcome-button {
+        width: 181px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .welcome-button:hover,
+    .welcome-button:focus {
+        opacity: 0.5;
+    }
+}
+    
+@media screen and (min-width: 1440px) {
+    .welcome-content {
+        margin-bottom: 80px;
+    }
+}

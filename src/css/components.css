@@ -34,6 +34,18 @@
 .nav-list-link {
     font-weight: 400;
     font-size: 16px;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-list-link:active {
+    opacity: 0.7;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-list-link:hover,
+    .nav-list-link:focus {
+        opacity: 0.5;
+    }
 }
 
 @media screen and (min-width: 1440px) {

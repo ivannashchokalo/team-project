@@ -1,19 +1,50 @@
-.subscribe-form{
+
+.subscribe-wrapper{
     margin-bottom: 32px;
+}
+
+.subscribe-form-group{
+    margin-bottom: 24px;
 }
 
 .subscribe-form-input{
     width: 100%;
     border-radius: 12px;
     padding: 8px 12px;
-    margin-bottom: 24px;
     background-color: inherit;
     border: 1px solid rgba(11, 8, 3, 0.15);
     outline: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-form-input {
+  width: 100%;
+  border-radius: 12px;
+  padding: 8px 12px;
+  background-color: inherit;
+  border: 1px solid rgba(11, 8, 3, 0.15);
+  outline: none;
+  margin-bottom: 16px;
+}
+
+
+.invalid-text{
+    font-size: 12px;
+    color: #7f1c1c;
+    display: none;
+    transition: display 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-form-input::placeholder{
     color:rgba(11, 8, 3, 0.6);
+}
+
+.subscribe-form-input:not(:placeholder-shown):invalid{
+    border-color: #7f1c1c;
+    color: #7f1c1c;
+}
+
+.subscribe-form-input:not(:placeholder-shown):invalid ~ .invalid-text{
+    display: block;
 }
 
 .subscribe-form-button{
@@ -27,7 +58,6 @@
     border-radius: 100px;
     font-weight: 500;
     color: #fff;
-    margin-bottom: 16px;
     background-color: #6F4E37;
     box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05),
                 inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2),
@@ -37,40 +67,45 @@
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscribe-form-button:active{
-    box-shadow: none;
+.subscribe-form-button:active {
+  box-shadow: none;
 }
 
-.subscribe-form-button svg{
-    fill: #fff;
-} 
-
-.subscribe-form-label{
-    font-weight: 400;
-    font-size: 12px;
-    width: 100%;
-    display: block;
+.subscribe-form-button svg {
+  fill: #fff;
 }
 
-.subscribe-image{
-    margin: 0 auto;
-    overflow: hidden;
+.subscribe-form-label {
+  font-weight: 400;
+  font-size: 12px;
+  width: 100%;
+  display: block;
 }
 
+.subscribe-image {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
     .subscribe-form{
         width: 522px;
         text-align: left;
     }
 
+    .subscribe-form-input-wrapper{
+        margin-bottom: 0;
+    }
+
     .subscribe-form-input{
         width: 340px;
-        margin-bottom: 16px;
     }
 
     .subscribe-form-group{
         display: flex;
         gap: 24px;
+        margin-bottom: 16px;
     }
 
     .subscribe-form-button{
@@ -96,22 +131,27 @@
 
     .subscribe-form-button:hover svg,
     .subscribe-form-button:focus svg {
-        fill: rgb(255, 255, 255, 0.5);
+        fill: rgba(255, 255, 255, 0.5);
     }
 }
 
+/* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
-    .subscribe .container{
-        display: flex;
-        align-items: center;
-        gap: 32px;
-    }
-    
-    .subscribe-wrapper{
-        width: 640px;
-    }
+  .subscribe .container {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
 
-    .subscribe-title{
-        max-width: 640px;
-    }
+  .subscribe-wrapper {
+    width: 640px;
+  }
+
+  .subscribe-title {
+    max-width: 640px;
+  }
+
+  .subscribe-form-group {
+    gap: 16px;
+  }
 }
