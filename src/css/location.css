@@ -17,6 +17,7 @@
 .map-container iframe {
   border-radius: 40px;
   display: block;
+  width: 100%;
 }
 .add-loc {
   font-style: normal;
@@ -57,13 +58,13 @@
 .contacts-location li p + a {
   margin-top: 16px;
 }
-.contacts-location .description-contacts-location + .location-adress {
+.contacts-location .description-contacts-location + .location-address {
   margin-top: 8px;
 }
-.contacts-location .location-adress + .btn-location {
+.contacts-location .location-address + .btn-location {
   margin-top: 16px;
 }
-.location-adress {
+.location-address {
   font-weight: 400;
   font-size: 16px;
 }
