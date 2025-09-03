@@ -1,9 +1,13 @@
-.subscribe-form{
+.subscribe-wrapper{
     margin-bottom: 32px;
 }
 
 .subscribe-form-input-wrapper{
     margin-bottom: 24px;
+}
+
+.subscribe-form-group{
+    margin-bottom: 16px;
 }
 
 .subscribe-form-input{
@@ -42,7 +46,6 @@
     border-radius: 100px;
     font-weight: 500;
     color: #fff;
-    margin-bottom: 16px;
     background-color: #6F4E37;
     box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05),
                 inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2),
@@ -78,8 +81,8 @@
         text-align: left;
     }
 
-    .subscribe-form-input-wrapper {
-        margin-bottom: 16px;
+    .subscribe-form-input-wrapper{
+        margin-bottom: 0;
     }
 
     .subscribe-form-input{
@@ -89,6 +92,7 @@
     .subscribe-form-group{
         display: flex;
         gap: 24px;
+        margin-bottom: 18px;
     }
 
     .subscribe-form-button{
