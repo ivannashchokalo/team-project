@@ -4,7 +4,7 @@
 }
 
 .subscribe-form-group{
-    margin-bottom: 16px;
+    margin-bottom: 24px;
 }
 
 .subscribe-form-input{
@@ -34,6 +34,11 @@
 
 .subscribe-form-input::placeholder{
     color:rgba(11, 8, 3, 0.6);
+}
+
+.subscribe-form-input:not(:placeholder-shown):invalid{
+    border-color: #7f1c1c;
+    color: #7f1c1c;
 }
 
 .subscribe-form-input:not(:placeholder-shown):invalid ~ .invalid-text{
@@ -98,6 +103,7 @@
     .subscribe-form-group{
         display: flex;
         gap: 24px;
+        margin-bottom: 16px;
     }
 
     .subscribe-form-button{
