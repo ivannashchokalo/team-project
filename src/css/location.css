@@ -8,6 +8,11 @@
     margin-bottom: 40px;
 }
 
+.add-loc {
+    font-style: normal;
+    margin-bottom: 32px; 
+}
+
 .contacts-location {
     display: flex;
     flex-direction: column;
@@ -15,72 +20,70 @@
     list-style: none;
 }
 
-
-
-.map-container iframe {
-    border-radius: 40px;
-    display: block;
+.contacts-location-item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.add-loc {
-font-style: normal;
-margin-bottom: 32px; 
-}
-
-
-.contacts-location a[href^="mailto"],
-.contacts-location a[href^="tel"] {
+.contacts-location-email,
+.contacts-location-tel {
     font-weight: 400;
     font-size: 16px;
     text-decoration: underline;
     text-decoration-skip-ink: none;
 }
 
-
 .btn-location {
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    gap: 8px;
+}
+
+.btn-location-text {
     font-weight: 500;
     font-size: 16px;
     text-decoration: none;
 }
 
-.contacts-location a:active {
+.contacts-location-email:active,
+.contacts-location-tel:active {
     opacity: 0.7;
 }
 
-.description-contacts-location{
+.contacts-location-description {
+    margin-bottom: 8px;
     font-weight: 400;
-        font-size: 20px;
-        line-height: 1.4;
-        letter-spacing: -0.01em;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
     font-family: var(—second-family)
 }
 
-.contacts-location li {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.location-icon {
+    margin-bottom: 16px;
+    fill: black;
 }
 
-.contacts-location li>svg+p {
-    margin-top: 8px;
+.description-contacts-location {
+    font-family: var(--second-family);
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
 }
 
-.contacts-location li p+a {
-    margin-top: 16px;
-}
 
-.contacts-location .description-contacts-location+.location-adress {
-    margin-top: 8px;
-}
-
-.contacts-location .location-adress+.btn-location {
-    margin-top: 16px;
-}
 .location-adress{
-font-weight: 400;
-font-size: 16px;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.map-container iframe {
+    border-radius: 40px;
+    display: block;
 }
 
 @media screen and (min-width:768px) {
@@ -93,24 +96,6 @@ font-size: 16px;
 
     .contacts-location li {
      width: calc((100% - 80px) / 3);
-     flex: 0 0 auto;
-
-    }
-
-    .contacts-location li:nth-child(1),
-    .contacts-location li:nth-child(2) {
-        height: 108px;
-    }
-
-    .contacts-location li:nth-child(3) {
-        height: 172px;
-    }
-
-    .btn-location {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        margin-top: 16px;
     }
 
     .contacts-location a {
@@ -123,34 +108,23 @@ font-size: 16px;
     }
 }
 
-
 @media screen and (min-width:1440px) {
-.location .container { 
-    display: flex;
-    gap: 24px;
+    .location .container { 
+        display: flex;
+        gap: 24px;
     }
-
-   
+    
     .text-column {
-    flex: 0 0 419px;
-    flex-direction: column;
-    gap: 40px;
+        flex-direction: column;
+        gap: 40px;
     }
 
     .contacts-location {
         flex-direction: column;
     }
 
-        .contacts-location li{
-            width: 100%;
-        }
-
-    .contacts-location li:not(:last-child){
-        margin-bottom: 0;
-    }
-
-    .contacts-location li:nth-child(3) {
-        margin-bottom: 32px;
+    .contacts-location li{
+        width: 100%;
     }
 
     .map-container {
@@ -158,9 +132,9 @@ font-size: 16px;
     }
 
     .map-container iframe {
-    border-radius: 40px;
-    width: 100%;
-    height: 697px;
+        border-radius: 40px;
+        width: 100%;
+        height: 697px;
     }
 }
 
