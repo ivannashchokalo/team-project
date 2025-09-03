@@ -1,93 +1,74 @@
 .mobile-menu {
   position: fixed;
-  inset: 0;
-  z-index: 1000;
-  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e0cbb4;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 2000;
 }
 .mobile-menu.is-open {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
-.overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-}
-.panel {
+.mobile-menu-container {
   position: relative;
-  width: 320px;
-  min-height: 100vh;
-  margin: 0 auto;
-  background: #e0cdd4;
-  padding: 16px 16px 24px;
+  padding-top: 72px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
-.top {
+
+.mobile-menu-container .logo {
+  position: absolute;
+  top: 18px;
+  left: 16px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-.logo img {
-  display: block;
-  width: 84px;
-  height: 36px;
 }
 .close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
   width: 48px;
   height: 48px;
+  border: none;
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 0;
-  background: transparent;
-  padding: 0;
   cursor: pointer;
 }
-.close svg {
-  width: 24px;
-  height: 24px;
-  display: block;
+
+.close:hover {
+  opacity: 0.5;
 }
 
 .mobile-menu-nav {
-  padding: 0 0 128px;
-  width: 320px;
-  height: 304px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  margin-top: 32px;
-}
-.nav-list {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-}
-.nav-list-item {
-  width: 100%;
-}
-.nav-list-link {
-  display: block;
-  width: 100%;
-  padding: 8px 0;
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: rgba(11, 8, 3, 0.6);
-  text-decoration: none;
+  margin-bottom: auto;
 }
 
-@media (min-width: 768px) {
+.nav-list-link {
+  color: #0b0803;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
   .mobile-menu {
-    display: none !important;
+    display: none;
   }
 }
