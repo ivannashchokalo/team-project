@@ -1,0 +1,144 @@
+/* Location */
+
+/* Styles for Mobile devices */
+.location-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-description-location {
+  margin-bottom: 40px;
+}
+
+.add-loc {
+    font-style: normal;
+    margin-bottom: 32px; 
+}
+
+.contacts-location {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  list-style: none;
+}
+
+.contacts-location-item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contacts-location-email,
+.contacts-location-tel {
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+.btn-location {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-location-text {
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.contacts-location-email:active,
+.contacts-location-tel:active {
+    opacity: 0.7;
+}
+
+.contacts-location-description {
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+    font-family: var(—second-family)
+}
+
+.location-icon {
+    margin-bottom: 16px;
+    fill: black;
+}
+
+.description-contacts-location {
+    font-family: var(--second-family);
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+}
+
+
+.location-adress{
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.map-container iframe {
+    border-radius: 40px;
+    display: block;
+}
+
+@media screen and (min-width:768px) {
+    .contacts-location {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .contacts-location li {
+        
+    }
+
+    .contacts-location a { 
+       transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  
+    .contacts-location a:hover,
+    .contacts-location a:focus {
+      opacity: 0.5;
+    }
+}
+
+
+
+@media screen and (min-width:1440px) {
+    .location .container { 
+        display: flex;
+        gap: 24px;
+    }
+    
+    .text-column {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .contacts-location {
+        flex-direction: column;
+    }
+
+    .contacts-location li{
+        width: 100%;
+    }
+
+    .map-container {
+        flex: 1;
+    }
+
+    .map-container iframe {
+        border-radius: 40px;
+        width: 100%;
+        height: 697px;
+    }
+}
+  
+
