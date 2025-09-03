@@ -8,14 +8,17 @@
       </p>
       <form class="subscribe-form" action="#" method="post">
         <div class="subscribe-form-group">
-          <input
-            class="subscribe-form-input"
-            name="email"
-            id="name"
-            type="mail"
-            placeholder="Your Email Here"
-            required
-          />
+          <div class="subscribe-form-input-wrapper">
+            <input
+              class="subscribe-form-input"
+              name="email"
+              id="name"
+              type="mail"
+              placeholder="Your Email Here"
+              required
+            />
+            <p class="invalid-text">Error text</p>
+          </div>
           <button type="submit" class="subscribe-form-button">
             Subscribe
             <svg class="icon" width="24" height="24">
