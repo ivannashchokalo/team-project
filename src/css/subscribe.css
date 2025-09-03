@@ -24,6 +24,8 @@
   border: 1px solid rgba(11, 8, 3, 0.15);
   outline: none;
   margin-bottom: 16px;
+}
+
 
 .invalid-text{
     font-size: 12px;
