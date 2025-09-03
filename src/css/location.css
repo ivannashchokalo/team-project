@@ -1,11 +1,13 @@
+/* Location */
 
+/* Styles for Mobile devices */
 .location-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .section-description-location {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .add-loc {
@@ -14,10 +16,10 @@
 }
 
 .contacts-location {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  list-style: none;
 }
 
 .contacts-location-item{
@@ -98,15 +100,14 @@
      width: calc((100% - 80px) / 3);
     }
 
-    .contacts-location a {
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .contacts-location a { 
+       transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-
+  
     .contacts-location a:hover,
     .contacts-location a:focus {
-        opacity: 0.5;
+      opacity: 0.5;
     }
-}
 
 @media screen and (min-width:1440px) {
     .location .container { 
@@ -137,7 +138,5 @@
         height: 697px;
     }
 }
-
-
-
+  
 
