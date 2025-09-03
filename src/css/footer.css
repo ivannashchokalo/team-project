@@ -48,7 +48,7 @@ footer svg{
     opacity: 0.7;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     .content{
         flex-direction: column;
     }
