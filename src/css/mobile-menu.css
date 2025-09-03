@@ -22,7 +22,7 @@
 .mobile-menu-container {
   position: relative;
   margin: 0 auto;
-  width: 320px;
+  max-width: 320px;
   height: 100%;
   background-color: #e0cbb4;
   display: flex;
