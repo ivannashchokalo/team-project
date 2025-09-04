@@ -1,11 +1,16 @@
+.section.welcome {
+    height: 885px;
+}
+
 .second-title.welcome {
-    margin-bottom: 32px;
+    margin-bottom: 0;
 }
 
 .welcome-content {
     display: flex;
     flex-direction: column;
     margin-bottom: 32px;
+    gap: 32px;
 }
 
 .welcome-button {
@@ -42,17 +47,16 @@
 }
 
 @media screen and (min-width: 768px) {
+    .section.welcome {
+    height: 821px;
+}
+
     .welcome-content {
         flex-direction: row;
-        gap: 32px
     }
     
     .welcome-title {
         width: calc((100% - 32px) / 2);
-    }
-
-    .second-title.welcome {
-        margin-bottom: 0px;
     }
 
     .welcome-button {
@@ -68,6 +72,10 @@
 }
     
 @media screen and (min-width: 1440px) {
+    .section.welcome {
+        height: 1130px;
+        }
+
     .welcome-content {
         margin-bottom: 80px;
     }
