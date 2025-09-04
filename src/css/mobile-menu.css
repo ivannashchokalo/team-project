@@ -20,7 +20,7 @@
   visibility: visible;
 }
 .mobile-menu:not(.is-open) .mobile-menu-container {
-  transform: translate(-50%, -50%) scale(0.5);
+  transform: scale(0.5);
 }
 .mobile-menu-container {
   position: relative;
@@ -33,7 +33,6 @@
   align-items: center;
   justify-content: center;
   padding: 64px 32px;
-  transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu-container .logo {
