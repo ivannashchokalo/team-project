@@ -19,7 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <script type="module" crossorigin src="/team-project/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/team-project/assets/index-4Dbt3bVz.css">
+    <link rel="stylesheet" crossorigin href="/team-project/assets/index-DvYRXSbm.css">
   </head>
   <body>
     <header class="header">
@@ -355,24 +355,30 @@
       </p>
       <form class="subscribe-form" action="#" method="post">
         <div class="subscribe-form-group">
-          <input
-            class="subscribe-form-input"
-            name="email"
-            id="email"
-            type="email"
-            placeholder="Your Email Here"
-            required
-          />
-          <button type="button" class="subscribe-form-button" data-modal-open>
+          <div class="subscribe-form-input-wrapper">
+            <label class="subscribe-form-input visually-hidden" for="email"
+              >Email</label
+            >
+            <input
+              class="subscribe-form-input"
+              name="email"
+              id="name"
+              type="mail"
+              placeholder="Your Email Here"
+              required
+            />
+            <p class="invalid-text">Error text</p>
+          </div>
+          <button type="submit" class="subscribe-form-button">
             Subscribe
             <svg class="icon" width="24" height="24">
               <use href="/team-project/assets/icons-DUPfrIxm.svg#chevrons-right"></use>
             </svg>
           </button>
         </div>
-        <label class="subscribe-form-label" for="email"
-          >By clicking Get Started, you agree to our Terms and Conditions.
-        </label>
+        <p class="subscribe-form-paragraph" for="email">
+          By clicking Get Started, you agree to our Terms and Conditions.
+        </p>
       </form>
     </div>
     <picture>
