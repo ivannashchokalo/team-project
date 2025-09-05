@@ -4,7 +4,7 @@
 }
 
 .subscribe-form-group{
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 
 .subscribe-form-input{
@@ -96,7 +96,6 @@
     .subscribe-form-group{
         display: flex;
         gap: 24px;
-        margin-bottom: 16px;
     }
 
     .subscribe-form-button{
