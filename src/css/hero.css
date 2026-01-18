@@ -68,7 +68,7 @@
   .hero {
     background-image: url(../img/hero/hero-tab.webp);
     max-width: 768px;
-    height: 900px;
+    min-height: 900px;
   }
   .hero-title {
     max-width: 560px;
@@ -93,7 +93,6 @@
   .hero {
     background-image: url(../img/hero/hero-desc.webp);
     max-width: 1440px;
-    height: 900px;
   }
   .hero-container {
     padding: 0 64px;

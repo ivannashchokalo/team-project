@@ -13,11 +13,13 @@
     e.preventDefault()
     refs.modal.classList.add("subscription-open");
     window.addEventListener('keydown', handleEscPress);
+    document.body.style.overflow = "hidden";
   }
 
   function handleCloseModal() {
     refs.modal.classList.remove("subscription-open");
-    window.removeEventListener('keydown', handleEscPress)
+    window.removeEventListener('keydown', handleEscPress);
+    document.body.style.overflow = "";
   }
 
   function handleEscPress(e) {
